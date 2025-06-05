@@ -63,10 +63,15 @@
 
 <h2 align="center">Conéctate Conmigo 🤝</h2>
 <p align="center">
-  <a href="https://linkedin.com/in/emerson-yujra-997b52260" target="_blank"><img src="https://user-images.githubusercontent.com/88904952/234979284-68c11d7f-1acc-4f0c-ac78-044e1037d7b0.png" alt="linkedin" height="50" /></a>
-  <a href="https://twitter.com/[TU_USUARIO_TWITTER]" target="_blank"><img src="https://user-images.githubusercontent.com/88904952/234980676-61bfb021-ecc8-48f7-88e6-34c1b06c4a58.png" alt="twitter" height="50" /></a>
-  <a href="mailto:escanorrosa123@gmail.com" target="_blank"><img src="https://user-images.githubusercontent.com/88904952/234980290-01ca8261-9119-4262-927C-49B3D368D3B4.png" alt="gmail" height="50" /></a>
-  <a href="https://you-developer.com" target="_blank"><img src="https://user-images.githubusercontent.com/88904952/234981622-b3975BD7-4F33-458A-9E6B-97272F8C32B1.png" alt="portfolio" height="50" /></a>
+  <a href="https://linkedin.com/in/emerson-yujra-997b52260" target="_blank">
+    <img src="https://user-images.githubusercontent.com/88904952/234979284-68c11d7f-1acc-4f0c-ac78-044e1037d7b0.png" alt="linkedin" height="50" />
+  </a>
+  &nbsp; <a href="mailto:escanorrosa123@gmail.com" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="gmail" height="50" />
+  </a>
+  &nbsp; <a href="https://you-developer.com" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/domain.png" alt="portfolio" height="50" />
+  </a>
 </p>
 
 <p align="center">
