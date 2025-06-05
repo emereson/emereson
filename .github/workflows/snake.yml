@@ -1,0 +1,45 @@
+# Nombre del flujo de trabajo de GitHub
+name: Generate Snake Animation
+
+# Controles para cuándo se ejecuta la acción
+on:
+  # Ejecuta la acción automáticamente cada 12 horas
+  schedule:
+    - cron: "0 */12 * * *"
+
+  # Permite ejecutar esta acción manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Una secuencia de trabajos que se ejecutarán
+jobs:
+  # El trabajo de compilación que genera la animación
+  build:
+    # El tipo de máquina virtual en la que se ejecutará el trabajo
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Genera la animación
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          # Tu nombre de usuario de GitHub
+          github_user_name: ${{ github.emereson }}
+
+          # Lista de archivos de salida que se generarán
+          # El formato es: {directorio_salida}/{nombre_archivo}.{formato}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      # 2. Sube los archivos generados a la rama 'output'
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          # La rama a la que se subirán los archivos
+          target_branch: output
+          # El directorio que contiene los archivos a subir
+          build_dir: dist
+        env:
+          # Token de acceso de GitHub para permitir la subida
+          GITHUB_TOKEN: ${{ secrets.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 }}
