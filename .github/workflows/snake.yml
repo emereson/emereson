@@ -9,9 +9,10 @@ on:
 
 jobs:
   build:
-    # Otorga permisos a la acción para leer el contenido del repositorio
     permissions:
-      contents: read
+      # ⬇️ ESTE ES EL CAMBIO CLAVE ⬇️
+      # Cambiamos 'read' por 'write' para permitir que la acción cree la rama y suba el archivo.
+      contents: write
     
     runs-on: ubuntu-latest
     steps:
