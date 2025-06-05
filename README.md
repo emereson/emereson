@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif" width="18%" style="display:inline-block; margin-right: 20px;">
   <div style="display:inline-block; vertical-align:middle;">
     <h1 style="display: inline-block; margin: 0;">¡Hola! 👋 Soy Emerson Wilson</h1>
     <h3 style="margin: 10px 0;">Desarrollador Web Full-Stack</h3>
@@ -17,18 +16,7 @@
   <img align="right" alt="GIF de Programación" width="38%" src="https://github.com/supravatm/supravatm/blob/main/src/code.gif" style="margin-left: 20px;">
   <div align="left" style="max-width: 58%;">
     Apasionado por la tecnología, con más de 2 años de experiencia en el desarrollo web. Me especializo en crear sitios modernos, funcionales y optimizados. Siempre estoy listo para asumir nuevos desafíos y convertir ideas en soluciones digitales reales.
-    <br><br>
-    - 🔭 Actualmente estoy trabajando en <b>[NOMBRE DE TU PROYECTO ACTUAL o "proyectos freelance y personales"]</b>.
-    <br>
-    - 🌱 Estoy aprendiendo y profundizando en <b>[NUEVA TECNOLOGÍA O HABILIDAD, ej: Arquitecturas Serverless, Machine Learning]</b>.
-    <br>
-    - 👯 Busco colaborar en proyectos innovadores de <b>desarrollo web (React, Next.js, Node.js, PHP/Laravel) y móvil (Flutter, React Native)</b>.
-    <br>
-    - 💬 Pregúntame sobre <b>Node.js, PHP, Laravel, NestJS, React, Next.js, Flutter, SQL/NoSQL</b>, o el ciclo completo de desarrollo de software.
-    <br>
-    - 📫 ¿Cómo contactarme? <b>[TU EMAIL o TU USUARIO DE LINKEDIN]</b>.
-    <br>
-    - ⚡ Dato curioso: <b>[UN DATO CURIOSO O HOBBY, ej: En mis tiempos libres, me gusta contribuir a proyectos de código abierto.]</b>
+
   </div>
 </p>
 <br clear="all">
