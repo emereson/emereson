@@ -3,32 +3,44 @@ name: Generate Snake Animation
 
 # Controles para cuándo se ejecuta la acción
 on:
+  # Ejecuta la acción automáticamente cada 12 horas
   schedule:
     - cron: "0 */12 * * *"
+  # Permite ejecutar esta acción manualmente desde la pestaña Actions
   workflow_dispatch:
 
 jobs:
   build:
+    # Permisos necesarios para leer contribuciones y escribir en la rama 'output'
     permissions:
-      # ⬇️ ESTE ES EL CAMBIO CLAVE ⬇️
-      # Cambiamos 'read' por 'write' para permitir que la acción cree la rama y suba el archivo.
       contents: write
     
+    # El tipo de máquina virtual en la que se ejecutará el trabajo
     runs-on: ubuntu-latest
+
     steps:
+      # Paso 1: Genera las animaciones de la serpiente
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
+          # Tu nombre de usuario de GitHub
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
+          # Lista de archivos de salida que se generarán
+          outputs: |
+            # Genera la versión para modo claro
+            dist/github-contribution-grid-snake.svg
+            # Genera la versión para modo oscuro (usando la paleta de colores de GitHub Dark)
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Paso 2: Sube los archivos generados a la rama 'output'
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
+          # La rama a la que se subirán los archivos
           target_branch: output
+          # El directorio que contiene los archivos a subir
           build_dir: dist
         env:
+          # Token de acceso de GitHub para permitir la subida
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
